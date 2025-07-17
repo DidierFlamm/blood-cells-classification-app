@@ -58,13 +58,27 @@ st.sidebar.subheader("Ambiance", divider=True)
 
 ambiance = st.sidebar.radio(
     "Select ambiance",
-    ("🔇 Silent mode", "😎 Summer remix", "💿 Gattaca OST"),
+    ("🔇 Silent mode", "😎 Summer remix", "💿 Welcome to Gattaca"),
     label_visibility="collapsed",
 )
 
-video_url = "https://www.youtube.com/watch?v=NI2IzZxVaFU"
 
 if ambiance.startswith("😎"):
+
+    video_url = "https://www.youtube.com/watch?v=NI2IzZxVaFU"
+    st.sidebar.video(video_url, autoplay=True, muted=False)
+
+    st.sidebar.markdown(
+        """
+    <div style='text-align: center; font-size: small; color: gray;'>
+    © 1997 Michael Nyman
+    </div>
+    """,
+        unsafe_allow_html=True,
+    )
+
+elif ambiance.startswith("💿"):
+    video_url = "https://www.youtube.com/watch?v=mwsLDBsizwM"
     st.sidebar.video(video_url, autoplay=True, muted=False)
 
     st.sidebar.markdown(
@@ -75,52 +89,6 @@ if ambiance.startswith("😎"):
     """,
         unsafe_allow_html=True,
     )
-
-elif ambiance.startswith("💿"):
-    tracks = {
-        "1. Never an Absolution": "https://archive.org/download/TitanicMusicfromtheMotionPicture/01%20Never%20an%20Absolution.mp3",
-        "2. Distant Memories": "https://archive.org/download/TitanicMusicfromtheMotionPicture/02%20Distant%20Memories.mp3",
-        "3. Southampton": "https://archive.org/download/TitanicMusicfromtheMotionPicture/03%20Southampton.mp3",
-        "4. Rose": "https://archive.org/download/TitanicMusicfromtheMotionPicture/04%20Rose.mp3",
-        "5. Leaving Port": "https://archive.org/download/TitanicMusicfromtheMotionPicture/05%20Leaving%20Port.mp3",
-        '6. "Take Her to Sea, Mr. Murdoch"': "https://archive.org/download/TitanicMusicfromtheMotionPicture/06%20%22Take%20Her%20to%20Sea%2C%20Mr.%20Murdoch%22.mp3",
-        '7. "Hard to Starboard"': "https://archive.org/download/TitanicMusicfromtheMotionPicture/07%20Track07.mp3",
-        "8. Unable to Stay, Unwilling to Leave": "https://archive.org/download/TitanicMusicfromtheMotionPicture/08%20Unable%20to%20Stay%2C%20Unwilling%20to%20Leave.mp3",
-        "9. The Sinking": "https://archive.org/download/TitanicMusicfromtheMotionPicture/09%20The%20Sinking.mp3",
-        "10. Death of Titanic": "https://archive.org/download/TitanicMusicfromtheMotionPicture/10%20Death%20of%20Titanic.mp3",
-        "11. A Promise Kept": "https://archive.org/download/TitanicMusicfromtheMotionPicture/11%20A%20Promise%20Kept.mp3",
-        "12. A Life So Changed": "https://archive.org/download/TitanicMusicfromtheMotionPicture/12%20A%20Life%20So%20Changed.mp3",
-        "13. An Ocean of Memories": "https://archive.org/download/TitanicMusicfromtheMotionPicture/13%20An%20Ocean%20of%20Memories.mp3",
-        "14. My Heart Will Go On": "https://archive.org/download/TitanicMusicfromtheMotionPicture/14%20My%20Heart%20Will%20Go%20On.mp3",
-        "15. Hymn to the Sea": "https://archive.org/download/TitanicMusicfromtheMotionPicture/15%20Hymn%20to%20the%20Sea.mp3",
-    }
-
-    if "track_index" not in st.session_state:
-        st.session_state.track_index = 0
-
-    track = st.sidebar.selectbox(
-        "Select track",
-        list(tracks.keys()),
-        index=st.session_state.track_index,
-    )
-
-    st.session_state.track_index = list(tracks.keys()).index(track)
-
-    st.sidebar.audio(
-        tracks[track],
-        format="audio/mpeg",
-        autoplay=True,
-    )
-
-    st.sidebar.markdown(
-        """
-    <div style='text-align: center; font-size: small; color: gray;'>
-    © 1997 James Horner
-    </div>
-    """,
-        unsafe_allow_html=True,
-    )
-
 
 st.sidebar.subheader("View all apps", divider=True)
 
