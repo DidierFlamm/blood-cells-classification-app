@@ -71,7 +71,7 @@ if ambiance.startswith("😎"):
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © 1997 Michael Nyman
+    © 2014 Vance Joy
     </div>
     """,
         unsafe_allow_html=True,
@@ -84,7 +84,7 @@ elif ambiance.startswith("💿"):
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © 2014 Vance Joy
+    © 1997 Michael Nyman
     </div>
     """,
         unsafe_allow_html=True,

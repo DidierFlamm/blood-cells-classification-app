@@ -3,7 +3,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 st.markdown(
-    "<h1 style='text-align: center; '>🌊 Dive into Computer Vision 👁️</h1>",
+    "<h1 style='text-align: center; '>🤿 Dive into Computer Vision 👁️</h1>",
     unsafe_allow_html=True,
 )
 
@@ -29,7 +29,7 @@ st.subheader(":red[Introduction]", divider=True)
 INTRO = """
 Bla bla bla... et voilà !
 
-Vos capitaines Flamm Didier et Bhaskar Pavithra, et vos matelots James et Charlize, vous souhaitent la bienvenue à bord du projet 'Blood Cells'. Embarquez pour un voyage serein et passionnant à travers le vaste océan des données !
+Vos capitaines Flamm Didier et Bhaskar Pavithra, et vos matelots James et Charlize, vous souhaitent la bienvenue à bord du projet Blood Cells. Embarquez pour un voyage serein et passionnant à travers le vaste océan des données !
 """
 
 OUTRO = """WoD — World of Datacraft"""
