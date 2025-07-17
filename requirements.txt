@@ -1,0 +1,7 @@
+google-cloud-translate
+numpy
+pandas
+plotly
+scikit_learn
+streamlit
+streamlit-javascript
