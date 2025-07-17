@@ -23,12 +23,13 @@ st.logo(
 
 st.sidebar.subheader("Language", divider=True)
 
-default_language = 'fr-FR'
+default_language = "fr-FR"
 disabled = True
 languages_csv = "https://raw.githubusercontent.com/DidierFlamm/titanic-survival-predictor/refs/heads/main/data/languages.csv"
 languages = pd.read_csv(languages_csv)
 
 index = languages.loc[languages["lang"] == default_language].index[0]
+
 
 def format_language(x):
     row = languages.loc[languages["lang"] == x]
@@ -57,11 +58,11 @@ st.sidebar.subheader("Ambiance", divider=True)
 
 ambiance = st.sidebar.radio(
     "Select ambiance",
-    ("🔇 Silent mode", "😎 Summer version", "💿 Titanic OST"),
+    ("🔇 Silent mode", "😎 Summer remix", "💿 Gattaca OST"),
     label_visibility="collapsed",
 )
 
-video_url = "https://www.youtube.com/watch?v=KiBQR7jKlzM"
+video_url = "https://www.youtube.com/watch?v=NI2IzZxVaFU"
 
 if ambiance.startswith("😎"):
     st.sidebar.video(video_url, autoplay=True, muted=False)
@@ -69,7 +70,7 @@ if ambiance.startswith("😎"):
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © 2019 Diva Faune feat. Clara Doxal
+    © 2014 Vance Joy
     </div>
     """,
         unsafe_allow_html=True,
@@ -141,7 +142,7 @@ if "pages" not in st.session_state:
             icon="🏡",
             default=True,
         ),
-        st.Page("pages/2_vizualisation.py", title="Vizualisation", icon="📊"),
+        st.Page("pages/2_visualisation.py", title="Visualisation", icon="📊"),
         st.Page("pages/3_evaluation.py", title="Evaluation", icon="📝"),
         st.Page("pages/4_optimization.py", title="Optimization", icon="📈"),
         st.Page("pages/5_predictions.py", title="Predictions", icon="🎯"),
