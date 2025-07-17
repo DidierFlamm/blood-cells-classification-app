@@ -17,9 +17,7 @@ st.markdown(
 
 st.image(
     "https://towardsdatascience.com/wp-content/uploads/2022/05/1k3oWPNpDC5tvok-04QAKVw.jpeg",
-    caption=(
-        """Image by Colin Behrens"""
-    ),
+    caption=("""Image by Colin Behrens"""),
 )
 
 
@@ -82,7 +80,7 @@ with col:
     st.write("")
     st.page_link(
         st.Page(
-            "pages/2_vizualisation.py",
+            "pages/2_visualisation.py",
             title=(
                 "Passer à l'étape suivante"
                 if st.session_state.lang.startswith("fr")
