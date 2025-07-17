@@ -23,7 +23,7 @@ st.logo(
 
 st.sidebar.subheader("Language", divider=True)
 
-default_language = "fr-FR"
+default_language = "en-US"
 disabled = True
 languages_csv = "https://raw.githubusercontent.com/DidierFlamm/titanic-survival-predictor/refs/heads/main/data/languages.csv"
 languages = pd.read_csv(languages_csv)
