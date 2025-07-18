@@ -11,7 +11,7 @@ st.write("")
 st.write("")
 
 st.markdown(
-    "<h2 style='text-align: center; color: #DC143C;'>🩸 Blood Cells Classification 🔬</h2>",
+    "<h2 style='text-align: center; color: #DC143C;'>🔬 Blood Cells Classification 🩸</h2>",
     unsafe_allow_html=True,
 )
 
