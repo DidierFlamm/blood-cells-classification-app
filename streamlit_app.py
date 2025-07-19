@@ -63,7 +63,7 @@ ambiance = st.sidebar.radio(
     "Select ambiance",
     (
         "🔇 Silent mode",
-        "🎛️ French Connec'sound",
+        "🎛️ French Connexion",
         "🕌 Happy Indian Pop",
         "💿 Welcome to Gattaca",
         "💲 Your ad here for...",
@@ -80,7 +80,7 @@ if ambiance.startswith("🎛️"):
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © 2014 Vance Joy
+    © 2024 Spinnin' Records
     </div>
     """,
         unsafe_allow_html=True,
