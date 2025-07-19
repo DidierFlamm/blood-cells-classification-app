@@ -1,4 +1,6 @@
 language,country,lang,local,english,region,flag
+🇺🇸 English (US),US,en-US,English,English,United States,🇺🇸
+🇫🇷 Français (FR),FR,fr-FR,Français,French,France,🇫🇷
 🇦🇹 Deutsch (AT),AT,de-AT,Deutsch,German,Austria,🇦🇹
 🇦🇺 English (AU),AU,en-AU,English,English,Australia,🇦🇺
 🇧🇷 Português (BR),BR,pt-BR,Português,Portuguese,Brazil,🇧🇷
@@ -32,7 +34,6 @@ language,country,lang,local,english,region,flag
 🇹🇭 ไทย (TH),TH,th-TH,ไทย,Thai,Thailand,🇹🇭
 🇹🇷 Türkçe (TR),TR,tr-TR,Türkçe,Turkish,Turkey,🇹🇷
 🇹🇼 中文 (國語) (TW),TW,zh-TW,中文 (國語),Chinese (Mandarin),Taiwan,🇹🇼
-🇺🇸 English (US),US,en-US,English,English,United States,🇺🇸
 🇺🇸 Español (US),US,es-US,Español,Spanish,United States,🇺🇸
 🇻🇳 Tiếng Việt (VN),VN,vi-VN,Tiếng Việt,Vietnamese,Vietnam,🇻🇳
 🇿🇦 English (ZA),ZA,en-ZA,English,English,South Africa,🇿🇦
