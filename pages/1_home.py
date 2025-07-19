@@ -31,10 +31,6 @@ The first version project, conducted between April 24 and July 4, 2023, by a tea
 
 The goal is to automatically identify and classify different types of blood cells from microscopic images using state-of-the-art machine learning and deep learning algorithms. The relative density and distribution of blood cells in a smear are essential diagnostic indicators for various pathologies. For example, leukemia diagnosis often relies on the lymphocyte-to-other-cell ratio. Accurate detection of abnormal leukocytes is therefore a critical step in supporting early diagnosis and treatment planning. Our approach aims to build a pipeline capable of preprocessing, segmenting, and classifying cells, paving the way for both clinical decision support systems and research applications.
 
-The models were trained and evaluated on three publicly available datasets.
-
-We also relied on prior work and scientific literature.
-
 The project began with an exploratory analysis of the datasets, including data cleaning, normalization, and augmentation to address class imbalance and improve generalization. We implemented a complete machine learning workflow, starting with traditional models (Random Forest, SVM) for baseline performance, followed by convolutional neural networks (CNNs) for advanced feature extraction and classification.
 
 Given the time constraints and computational resources, we focused this first stage on classifying healthy blood cells. This step provides a robust foundation for future work aimed at detecting abnormal cells and computing relevant clinical ratios (e.g., lymphocyte percentage) in real patient samples.
@@ -86,13 +82,13 @@ st.subheader(":red[Data]", divider=True)
 
 st.write(
     """
-The models were trained and evaluated on three publicly available datasets.
-Dataset 1: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7182702/
-Dataset 2: https://www.kaggle.com/eugeneshenderov/acute-promyelocytic-leukemia-apl
+The models were trained and evaluated on three publicly available datasets:  
+Dataset 1: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7182702/  
+Dataset 2: https://www.kaggle.com/eugeneshenderov/acute-promyelocytic-leukemia-apl  
 Dataset 3: https://www.kaggle.com/nikhilsharma00/leukemia-dataset
 
-We also relied on prior work and scientific literature:
-https://www.sciencedirect.com/science/article/abs/pii/S0169260719303578?via%3Dihub
+We also relied on prior work and scientific literature:  
+https://www.sciencedirect.com/science/article/abs/pii/S0169260719303578?via%3Dihub  
 https://www.sciencedirect.com/science/article/abs/pii/S0169260721000742?via%3Dihub
 """
 )
