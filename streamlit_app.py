@@ -25,7 +25,7 @@ st.sidebar.subheader("Language", divider=True)
 
 default_language = "en-US"
 disable_language_selectbox = False
-languages_csv = "https://raw.githubusercontent.com/DidierFlamm/titanic-survival-predictor/refs/heads/main/data/languages.csv"
+languages_csv = "https://raw.githubusercontent.com/DidierFlamm/blood-cells-classification-app/refs/heads/main/data/languages.csv"
 languages = pd.read_csv(languages_csv)
 
 if "google_credentials" not in st.secrets:
