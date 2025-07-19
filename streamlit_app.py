@@ -74,7 +74,7 @@ ambiance = st.sidebar.radio(
 
 if ambiance.startswith("🎛️"):
 
-    video_url = "https://www.youtube.com/watch?v=ZIIT9hO1EZE"
+    video_url = "https://youtu.be/8xH_DijmoB8"
     st.sidebar.video(video_url, autoplay=True, muted=False)
 
     st.sidebar.markdown(
