@@ -64,7 +64,7 @@ ambiance = st.sidebar.radio(
     (
         "🔇 Silent mode",
         "🎛️ French Connexion",
-        "🕌 Indian Indie Pop Ale",
+        "🕌 India Pop Ale",
         "💿 Welcome to Gattaca",
         "💲 Your ad here for...",
     ),
