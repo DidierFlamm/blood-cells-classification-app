@@ -78,7 +78,7 @@ if ambiance.startswith("😎"):
     )
 
 elif ambiance.startswith("💿"):
-    video_url = "https://www.youtube.com/watch?v=mwsLDBsizwM"
+    video_url = "https://youtu.be/zeNOEumJQdg?si=RSuNSwO0rVbC9wiH"
     st.sidebar.video(video_url, autoplay=True, muted=False)
 
     st.sidebar.markdown(
