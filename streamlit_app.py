@@ -142,7 +142,7 @@ if "pages" not in st.session_state:
         st.Page("pages/3_evaluation.py", title="Evaluation", icon="📝"),
         st.Page("pages/4_optimization.py", title="Optimization", icon="📈"),
         st.Page("pages/5_predictions.py", title="Predictions", icon="🎯"),
-        st.Page("pages/6_end.py", title="End", icon="🏁"),
+        st.Page("pages/6_end.py", title="The End", icon="🏁"),
     ]
 
 pg = st.navigation(st.session_state.pages, position="top")
