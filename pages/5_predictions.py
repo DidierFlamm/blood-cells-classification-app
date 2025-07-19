@@ -7,7 +7,7 @@ st.markdown(
 )
 
 # URL de la vidéo
-video_url = "https://youtu.be/vXBY6Zu46HE"
+video_url = "https://youtu.be/W_KruQhfvW4?si=xYCw-vPowiZdz8jy"
 
 st.video(video_url, autoplay=True, muted=True)
 
