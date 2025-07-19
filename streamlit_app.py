@@ -85,6 +85,9 @@ if ambiance.startswith("😎"):
         unsafe_allow_html=True,
     )
 
+elif ambiance.startswith("🕌"):
+    st.sidebar.write("🚧🚧🚧🚧🚧🚧🚧🚧")
+
 elif ambiance.startswith("💿"):
     video_url = "https://youtu.be/zeNOEumJQdg?si=RSuNSwO0rVbC9wiH"
     st.sidebar.video(video_url, autoplay=True, muted=False)
