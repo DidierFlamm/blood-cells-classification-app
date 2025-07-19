@@ -66,14 +66,15 @@ ambiance = st.sidebar.radio(
         "😎 French Connec'sound",
         "🕌 Happy Indian Indie Pop",
         "💿 Welcome to Gattaca",
+        "💲 You music here for...",
     ),
     label_visibility="collapsed",
 )
 
 
-if ambiance.startswith("😎"):
+if ambiance.startswith("🎛️"):
 
-    video_url = "https://www.youtube.com/watch?v=NI2IzZxVaFU"
+    video_url = "https://www.youtube.com/watch?v=ZIIT9hO1EZE"
     st.sidebar.video(video_url, autoplay=True, muted=False)
 
     st.sidebar.markdown(
@@ -96,6 +97,19 @@ elif ambiance.startswith("💿"):
         """
     <div style='text-align: center; font-size: small; color: gray;'>
     © 1997 Michael Nyman
+    </div>
+    """,
+        unsafe_allow_html=True,
+    )
+
+elif ambiance.startswith("💲"):
+
+    st.sidebar.write("FREE !")
+
+    st.sidebar.markdown(
+        """
+    <div style='text-align: center; font-size: small; color: gray;'>
+    © Your copyright 
     </div>
     """,
         unsafe_allow_html=True,
