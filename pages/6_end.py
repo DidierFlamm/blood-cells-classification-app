@@ -10,7 +10,7 @@ st.markdown(
 st.balloons()
 
 # URL de la vidéo
-video_url = "https://youtu.be/Sj9MEwjkxE0"
+video_url = "https://youtu.be/M26WayJWXCM?si=Ur2NimIhUimfaHSz"
 
 st.video(video_url, autoplay=True, muted=True)
 
