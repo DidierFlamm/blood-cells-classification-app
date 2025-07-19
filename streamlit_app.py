@@ -107,7 +107,7 @@ if "pages" not in st.session_state:
         st.Page(
             "pages/1_home.py",
             title="Home",
-            icon="🏡",
+            icon="🔬",
             default=True,
         ),
         st.Page("pages/2_visualisation.py", title="Visualisation", icon="📊"),
