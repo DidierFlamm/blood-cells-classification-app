@@ -24,9 +24,12 @@ st.logo(
 st.sidebar.subheader("Language", divider=True)
 
 default_language = "en-US"
-disabled = True
+disable_language_selectbox = False
 languages_csv = "https://raw.githubusercontent.com/DidierFlamm/titanic-survival-predictor/refs/heads/main/data/languages.csv"
 languages = pd.read_csv(languages_csv)
+
+if "google_credentials" not in st.secrets:
+    disable_language_selectbox = True
 
 index = languages.loc[languages["lang"] == default_language].index[0]
 
@@ -43,7 +46,7 @@ st.sidebar.selectbox(
     key="lang",
     format_func=format_language,
     label_visibility="collapsed",
-    disabled=disabled,
+    disabled=disable_language_selectbox,
     index=int(index),
 )
 
@@ -58,7 +61,12 @@ st.sidebar.subheader("Ambiance", divider=True)
 
 ambiance = st.sidebar.radio(
     "Select ambiance",
-    ("🔇 Silent mode", "😎 French Connec'sound", "💿 Welcome to Gattaca"),
+    (
+        "🔇 Silent mode",
+        "😎 French Connec'sound",
+        "🕌 Indie Indian Pop",
+        "💿 Welcome to Gattaca",
+    ),
     label_visibility="collapsed",
 )
 

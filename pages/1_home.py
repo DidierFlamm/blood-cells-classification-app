@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import streamlit as st
+from utils import translate_text
 import streamlit.components.v1 as components
 
 st.markdown(
@@ -27,7 +28,7 @@ st.subheader(":red[Introduction]", divider=True)
 # Textes à lire
 
 INTRO = """
-The first version project, conducted between April 24 and July 4, 2023, by a team of four students from the Data Scientist Bootcamp (April 2023 cohort) at DataScientest.com, focuses on applying computer vision techniques to medical imaging.
+The first version of this project, conducted between April 24 and July 4, 2023, by a team of four students from the Data Scientist Bootcamp (April 2023 cohort) at DataScientest.com, focuses on applying computer vision techniques to medical imaging.
 
 The goal is to automatically identify and classify different types of blood cells from microscopic images using state-of-the-art machine learning and deep learning algorithms. The relative density and distribution of blood cells in a smear are essential diagnostic indicators for various pathologies. For example, leukemia diagnosis often relies on the lymphocyte-to-other-cell ratio. Accurate detection of abnormal leukocytes is therefore a critical step in supporting early diagnosis and treatment planning. Our approach aims to build a pipeline capable of preprocessing, segmenting, and classifying cells, paving the way for both clinical decision support systems and research applications.
 
@@ -40,6 +41,7 @@ Two years later, in July 2025, a second version of the project was launched by a
 Captains Flamm Didier and Bhaskar Pavithra, together with their fearless young crew members James and Charlize, welcome you aboard the Blood Cells Project. Get ready to set sail on an exciting and insightful journey across the boundless ocean of data, where every wave of information brings us closer to uncovering the secrets hidden within blood cells.
 """
 
+INTRO = translate_text(INTRO, st.session_state.lang.split("-")[0])
 
 script = f"""
 <script>
@@ -114,7 +116,8 @@ st.divider()
 st.markdown(
     """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © 2025 World of Datacraft
+    © 2023 Jonathan CAMBON, Didier FLAMM, Mamadou HASSIMIOU BAH and Ilyass SAIDI
+    © 2025 Didier FLAMM feat. Pavithra BHASKAR (Dive Into Data)
     </div>
     """,
     unsafe_allow_html=True,
