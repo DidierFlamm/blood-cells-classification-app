@@ -9,12 +9,14 @@ st.markdown(
 
 st.balloons()
 
+st.subheader("🚨 ¡ SPOILER ALERT ! 🚨")
+
 # URL de la vidéo
 video_url = "https://youtu.be/M26WayJWXCM?si=Ur2NimIhUimfaHSz"
 
 st.video(video_url, autoplay=True, muted=True)
 
-st.subheader("🎉🚢")
+st.subheader("🎉")
 
 st.write_stream(
     stream_data(
