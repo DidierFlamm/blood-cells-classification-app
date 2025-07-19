@@ -28,7 +28,7 @@ st.subheader(":red[Introduction]", divider=True)
 # Textes à lire
 
 INTRO = """
-The first version of this project, conducted between April 24 and July 4, 2023, by a team of four students from the Data Scientist Bootcamp (April 2023 cohort) at DataScientest.com, focuses on applying computer vision techniques to medical imaging.
+The first version of this project, conducted between April 24 and July 4, 2023, by a team of four students from the Data Scientist Bootcamp at Mines Paris – PSL & DataScientest.com, focuses on applying computer vision techniques to medical imaging.
 
 The goal is to automatically identify and classify different types of blood cells from microscopic images using state-of-the-art machine learning and deep learning algorithms. The relative density and distribution of blood cells in a smear are essential diagnostic indicators for various pathologies. For example, leukemia diagnosis often relies on the lymphocyte-to-other-cell ratio. Accurate detection of abnormal leukocytes is therefore a critical step in supporting early diagnosis and treatment planning. Our approach aims to build a pipeline capable of preprocessing, segmenting, and classifying cells, paving the way for both clinical decision support systems and research applications.
 
