@@ -63,10 +63,10 @@ ambiance = st.sidebar.radio(
     "Select ambiance",
     (
         "🔇 Silent mode",
-        "😎 French Connec'sound",
-        "🕌 Happy Indian Indie Pop",
+        "🎛️ French Connec'sound",
+        "🕌 Happy Indian Pop",
         "💿 Welcome to Gattaca",
-        "💲 You music here for...",
+        "💲 Your ad here for...",
     ),
     label_visibility="collapsed",
 )
@@ -104,7 +104,10 @@ elif ambiance.startswith("💿"):
 
 elif ambiance.startswith("💲"):
 
-    st.sidebar.write("FREE !")
+    st.sidebar.markdown(
+        "<h3 style='text-align: center; color: red;'>FREE !</h3>",
+        unsafe_allow_html=True,
+    )
 
     st.sidebar.markdown(
         """
