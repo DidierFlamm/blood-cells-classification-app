@@ -64,7 +64,7 @@ ambiance = st.sidebar.radio(
     (
         "🔇 Silent mode",
         "😎 French Connec'sound",
-        "🕌 Indie Indian Pop",
+        "🕌 Happy Indian Indie Pop",
         "💿 Welcome to Gattaca",
     ),
     label_visibility="collapsed",
