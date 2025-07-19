@@ -58,7 +58,7 @@ st.sidebar.subheader("Ambiance", divider=True)
 
 ambiance = st.sidebar.radio(
     "Select ambiance",
-    ("🔇 Silent mode", "😎 French Connection remix", "💿 Welcome to Gattaca"),
+    ("🔇 Silent mode", "😎 French Connecsound", "💿 Welcome to Gattaca"),
     label_visibility="collapsed",
 )
 
