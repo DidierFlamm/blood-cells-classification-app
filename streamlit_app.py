@@ -80,7 +80,7 @@ if ambiance.startswith("🎛️"):
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © 2024 Spinnin' Records
+    © 2025 Astech
     </div>
     """,
         unsafe_allow_html=True,
