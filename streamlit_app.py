@@ -74,13 +74,13 @@ ambiance = st.sidebar.radio(
 
 if ambiance.startswith("🎛️"):
 
-    video_url = "https://youtu.be/8xH_DijmoB8"
+    video_url = "https://www.youtube.com/watch?v=4m73Cm2H0xM"
     st.sidebar.video(video_url, autoplay=True, muted=False)
 
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © 2025 Astech
+    © 2022 Kate Bush x KREAM
     </div>
     """,
         unsafe_allow_html=True,
