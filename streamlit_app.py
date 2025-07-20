@@ -80,7 +80,7 @@ if ambiance.startswith("🎛️"):
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
-    Kate Bush - Running Up That Hill  
+    Kate Bush - Running Up That Hill<br>
     (KREAM Remix)
     </div>
     """,
