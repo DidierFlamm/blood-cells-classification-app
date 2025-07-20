@@ -80,7 +80,7 @@ if ambiance.startswith("🎛️"):
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © 2022 Kate Bush x KREAM
+    Kate Bush - Running Up That Hill (KREAM Remix)
     </div>
     """,
         unsafe_allow_html=True,
