@@ -82,7 +82,7 @@ if ambiance.startswith("🎛️"):
     <div style='text-align: center; font-size: small; color: gray;'>
     Running Up That Hill<br>
     (A Deal With God)<br>
-    Kate Bush x KREAM
+    © 2022 Kate Bush x KREAM
     </div>
     """,
         unsafe_allow_html=True,
