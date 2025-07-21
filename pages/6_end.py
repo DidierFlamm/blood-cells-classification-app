@@ -31,14 +31,19 @@ st.write_stream(stream_data("A bientôt !"))
 st.write_stream(stream_data("Didier & Pavithra 🫡🫡", sleep=0.7))
 
 st.balloons()
+st.image(
+    "https://raw.githubusercontent.com/DidierFlamm/blood-cells-classification-app/main/data/MAIHA.png",
+    caption="""Make AI Hot Again  
+    © 2025 ChatGPT feat. MS Copilot""",
+)
 
 st.divider()
 
 st.markdown(
-    """_📦 Le code source du projet Titanic Survival Predictor est disponible sur <a href="https://github.com/DidierFlamm/titanic-survival-predictor" target="_blank">GitHub</a>.  
-    🧩 Découvrez toutes mes applications interactives sur <a href="https://share.streamlit.io/user/didierflamm" target="_blank">Streamlit Community Cloud</a>.  
-    N’hésitez pas à y faire un tour puis me faire part de vos impressions via  
-    ✉️ [contact@diveintodata.fr](mailto:contact@diveintodata.fr)  ou 💬 [LinkedIn](https://www.linkedin.com/in/didier-flamm)._""",
+    """📦 Source code: <a href="https://github.com/DidierFlamm/titanic-survival-predictor" target="_blank">GitHub</a>  
+    🧩 View all apps: <a href="https://share.streamlit.io/user/didierflamm" target="_blank">Streamlit Community Cloud</a>  
+    ✉️ [contact@diveintodata.ai](mailto:contact@diveintodata.ai)  
+    💬 LinkedIn: [Didier](https://www.linkedin.com/in/didier-flamm) & [Pavithra](https://www.linkedin.com/in/pavithrabhaskar)""",
     unsafe_allow_html=True,
 )
 
@@ -46,7 +51,7 @@ st.markdown(
     """
     <div style='text-align: center; font-size: small; color: gray;'>
     © 2023 Jonathan CAMBON, Didier FLAMM, Mamadou HASSIMIOU BAH, Ilyass SAIDI, supervised by Khalil OUERTANI<br>
-    © 2025 Didier FLAMM, Pavithra BHASKAR
+    © 2025 Didier FLAMM feat. Pavithra BHASKAR
     </div>
     """,
     unsafe_allow_html=True,
