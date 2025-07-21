@@ -6,7 +6,7 @@ import pandas as pd
 st.set_page_config(
     menu_items={
         "Get Help": None,
-        "Report a bug": "mailto:contact@diveintodata.ai?subject=Reporting%20a%20bug%20app&body=Project%0AOS%20(Windows,%20macOS,%20Linux,%20Android,%20iOS):%0ABrowser:%0ABug%20you%20encountered:%0A%0AThanks!",
+        "Report a bug": "mailto:contact@diveintodata.ai?subject=Reporting%20a%20bug&body=Project:%0AOS%20(Windows,%20macOS,%20Linux,%20Android,%20iOS):%0ABrowser:%0ABug%20you%20encountered:%0A%0AThanks!",
         "About": """## Blood Cells Classification 
 Project using computer vision and deep learning to automatically identify different cell types (healthy or pathological) from microscopic images.  
 
