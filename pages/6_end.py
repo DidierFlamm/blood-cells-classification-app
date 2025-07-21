@@ -33,7 +33,7 @@ st.write_stream(stream_data("Didier & Pavithra 🫡🫡", sleep=0.7))
 st.balloons()
 st.image(
     "https://raw.githubusercontent.com/DidierFlamm/blood-cells-classification-app/main/data/MAIHA.png",
-    caption="""MAKE AI H🔥t AGAIN  
+    caption="""MAKE AI H🔥T AGAIN  
     © 2025 ChatGPT feat. MS Copilot""",
 )
 
