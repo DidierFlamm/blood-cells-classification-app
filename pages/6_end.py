@@ -7,8 +7,6 @@ st.markdown(
 )
 
 
-st.balloons()
-
 st.subheader("🚨  SPOILER ALERT !")
 
 # URL de la vidéo
