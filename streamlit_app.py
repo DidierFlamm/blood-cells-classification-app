@@ -129,7 +129,7 @@ elif ambiance.startswith("💲"):
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © and your copyright here or not
+    © and your copyright here (or not)
     </div>
     """,
         unsafe_allow_html=True,
