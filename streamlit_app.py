@@ -67,7 +67,7 @@ ambiance = st.sidebar.radio(
     (
         "🔇 Silent mode",
         "🎛️ French Connexion",
-        "🔞 French Version",
+        "🇨🇦 French Version 🔞",
         "🕌 India Pop Ale",
         "💿 Welcome to Gattaca",
         "💲 Your ad here for...",
@@ -78,20 +78,20 @@ ambiance = st.sidebar.radio(
 
 if ambiance.startswith("🎛️"):
 
-    video_url = "https://www.youtube.com/watch?v=M9geuh8bpy4"
+    video_url = "https://www.youtube.com/watch?v=ekwf5IAFLhQ"
     st.sidebar.video(video_url, autoplay=True, muted=False)
 
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
     Charlotte Cardin - Confetti<br>
-    Live in Toronto - June 8, 2023
+    Live at The 2024 JUNO Awards on CBC
     </div>
     """,
         unsafe_allow_html=True,
     )
 
-elif ambiance.startswith("🔞"):
+elif ambiance.startswith("🇨🇦"):
 
     video_url = "https://www.youtube.com/watch?v=lNfAtaURtBI"
     st.sidebar.video(video_url, autoplay=True, muted=False)
