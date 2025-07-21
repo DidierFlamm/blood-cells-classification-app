@@ -7,7 +7,7 @@ st.markdown(
 )
 
 
-st.subheader("🚨  SPOILER ALERT !")
+st.subheader("🚨  SPOILER ALERT 🫣")
 
 # URL de la vidéo
 video_url = "https://youtu.be/M26WayJWXCM?si=Ur2NimIhUimfaHSz"
