@@ -64,6 +64,7 @@ ambiance = st.sidebar.radio(
     (
         "🔇 Silent mode",
         "🎛️ French Connexion",
+        "🔞 Original Version",
         "🕌 India Pop Ale",
         "💿 Welcome to Gattaca",
         "💲 Your ad here for...",
@@ -74,15 +75,29 @@ ambiance = st.sidebar.radio(
 
 if ambiance.startswith("🎛️"):
 
-    video_url = "https://www.youtube.com/watch?v=4m73Cm2H0xM"
+    video_url = "https://www.youtube.com/watch?v=8QNSAjfqsn8"
     st.sidebar.video(video_url, autoplay=True, muted=False)
 
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
-    Running Up That Hill<br>
-    (A Deal With God)<br>
-    © 2022 Kate Bush x KREAM
+    Charlotte Cardin - Confetti<br>
+    Juno Awards 2024
+    </div>
+    """,
+        unsafe_allow_html=True,
+    )
+
+elif ambiance.startswith("🔞"):
+
+    video_url = "https://www.youtube.com/watch?v=lNfAtaURtBI"
+    st.sidebar.video(video_url, autoplay=True, muted=False)
+
+    st.sidebar.markdown(
+        """
+    <div style='text-align: center; font-size: small; color: gray;'>
+    Charlotte Cardin - Confetti (VF)<br>
+    [Official Lyric Video]
     </div>
     """,
         unsafe_allow_html=True,
