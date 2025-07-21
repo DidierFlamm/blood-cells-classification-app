@@ -107,7 +107,7 @@ elif ambiance.startswith("🔞"):
     )
 
 elif ambiance.startswith("🕌"):
-    st.sidebar.balloons()
+    st.balloons()
     video_url = "https://youtu.be/6w67NOaRe-w?si=GvtoD5rbshLG1vaf"
     st.sidebar.video(video_url, autoplay=True, muted=False)
 
