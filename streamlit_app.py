@@ -181,11 +181,12 @@ if "pages" not in st.session_state:
             icon="🔬",
             default=True,
         ),
-        st.Page("pages/2_visualisation.py", title="Visualisation", icon="📊"),
-        st.Page("pages/3_evaluation.py", title="Evaluation", icon="📝"),
-        st.Page("pages/4_optimization.py", title="Optimization", icon="📈"),
-        st.Page("pages/5_predictions.py", title="Predictions", icon="🎯"),
-        st.Page("pages/6_end.py", title="The End", icon="🏁"),
+        st.Page("pages/2_viz.py", title="Visualisation", icon="📊"),
+        st.Page("pages/3_preproc.py", title="Preprocessing", icon="🛠️"),
+        st.Page("pages/4_ml.py", title="Machine Learning", icon="🤖"),
+        st.Page("pages/5_dl.py", title="Deep Learning", icon="🧠"),
+        st.Page("pages/6_pred.py", title="Predictions", icon="🎯"),
+        st.Page("pages/7_end.py", title="The End", icon="🏁"),
     ]
 
 pg = st.navigation(st.session_state.pages, position="top")

@@ -101,18 +101,14 @@ https://github.com/DidierFlamm/blood-cells-classification-app/raw/main/Rapport_f
 """
 )
 
-_, col, _ = st.columns(3)
+_, _, col = st.columns(3)
 with col:
     st.write("")
     st.write("")
     st.page_link(
         st.Page(
-            "pages/2_visualisation.py",
-            title=(
-                "Passer à l'étape suivante"
-                if st.session_state.lang.startswith("fr")
-                else "Go to the next step"
-            ),
+            "pages/2_viz.py",
+            title=("Next"),
             icon="➡️",
         )
     )
