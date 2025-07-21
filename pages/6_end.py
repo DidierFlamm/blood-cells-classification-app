@@ -41,7 +41,7 @@ st.divider()
 
 st.markdown(
     """📦 Source code: <a href="https://github.com/DidierFlamm/titanic-survival-predictor" target="_blank">GitHub</a>  
-    🧩 View all apps: <a href="https://share.streamlit.io/user/didierflamm" target="_blank">Streamlit Community Cloud</a>  
+    📂 View all apps: <a href="https://share.streamlit.io/user/didierflamm" target="_blank">Streamlit Community Cloud</a>  
     ✉️ [contact@diveintodata.ai](mailto:contact@diveintodata.ai)  
     💬 LinkedIn: [Didier](https://www.linkedin.com/in/didier-flamm) & [Pavithra](https://www.linkedin.com/in/pavithrabhaskar)""",
     unsafe_allow_html=True,
