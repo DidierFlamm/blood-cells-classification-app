@@ -104,8 +104,20 @@ elif ambiance.startswith("🔞"):
     )
 
 elif ambiance.startswith("🕌"):
-    st.sidebar.write("🚧🚧🚧🚧🚧🚧🚧🚧")
+    
+    video_url = "https://youtu.be/6w67NOaRe-w?si=GvtoD5rbshLG1vaf"
+    st.sidebar.video(video_url, autoplay=True, muted=False)
 
+    st.sidebar.markdown(
+        """
+    <div style='text-align: center; font-size: small; color: gray;'>
+    © 2023 Charlotte Cardin - Confetti (VF)<br>
+    [Official Lyric Video]
+    </div>
+    """,
+        unsafe_allow_html=True,
+    )
+    
 elif ambiance.startswith("💿"):
     video_url = "https://youtu.be/zeNOEumJQdg?si=RSuNSwO0rVbC9wiH"
     st.sidebar.video(video_url, autoplay=True, muted=False)
