@@ -136,7 +136,7 @@ st.sidebar.subheader("View all apps", divider=True)
 st.sidebar.markdown(
     """
     <a href="https://share.streamlit.io/user/didierflamm" target="_blank">
-        <img src="https://github.com/DidierFlamm/DidierFlamm/blob/main/DID.png?raw=true" width="100%"; />
+        <img src="https://github.com/DidierFlamm/DidierFlamm/raw/main/DID.png" width="100%"; />
     </a>
     """,
     unsafe_allow_html=True,
