@@ -111,8 +111,8 @@ elif ambiance.startswith("🕌"):
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © 2023 Charlotte Cardin - Confetti (VF)<br>
-    [Official Lyric Video]
+    © 2013 Yeh Jawaani Hai Deewani - Illahi <br>
+    [Official Video]
     </div>
     """,
         unsafe_allow_html=True,
