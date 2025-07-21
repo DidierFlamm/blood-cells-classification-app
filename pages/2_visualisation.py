@@ -7,7 +7,6 @@ st.markdown(
 )
 
 
-
 st.subheader(":red[Analyse univariée]", divider=True)
 
 st.write(
@@ -23,7 +22,6 @@ st.write(
     à des analyses plus complexes (bivariées ou multivariées) et enfin à la modélisation prédictive.
     """
 )
-
 
 
 st.subheader(":red[Analyse bivariée]", divider=True)
@@ -68,7 +66,8 @@ st.divider()
 st.markdown(
     """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © 2025 World of Datacraft
+    © 2023 Jonathan CAMBON, Didier FLAMM, Mamadou HASSIMIOU BAH, Ilyass SAIDI, supervised by Khalil OUERTANI<br>
+    © 2025 Didier FLAMM, Pavithra BHASKAR
     </div>
     """,
     unsafe_allow_html=True,

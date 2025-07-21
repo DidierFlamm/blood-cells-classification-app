@@ -38,7 +38,8 @@ st.divider()
 st.markdown(
     """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © 2025 World of Datacraft
+    © 2023 Jonathan CAMBON, Didier FLAMM, Mamadou HASSIMIOU BAH, Ilyass SAIDI, supervised by Khalil OUERTANI<br>
+    © 2025 Didier FLAMM, Pavithra BHASKAR
     </div>
     """,
     unsafe_allow_html=True,

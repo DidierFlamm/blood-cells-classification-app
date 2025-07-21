@@ -12,7 +12,6 @@ video_url = "https://youtu.be/W_KruQhfvW4?si=xYCw-vPowiZdz8jy"
 st.video(video_url, autoplay=True, muted=True)
 
 
-
 st.write(
     "🚢 Cher passager, merci pour votre patience ! La traversée des étapes d’évaluation et d’optimisation n’est pas toujours de tout repos – surtout quand les conditions algorithmiques sont capricieuses..."
 )
@@ -71,7 +70,8 @@ st.divider()
 st.markdown(
     """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © 2025 World of Datacraft
+    © 2023 Jonathan CAMBON, Didier FLAMM, Mamadou HASSIMIOU BAH, Ilyass SAIDI, supervised by Khalil OUERTANI<br>
+    © 2025 Didier FLAMM, Pavithra BHASKAR
     </div>
     """,
     unsafe_allow_html=True,
