@@ -152,7 +152,7 @@ st.sidebar.subheader("Join us on Discord", divider=True)
 st.sidebar.markdown(
     """
     <a href="https://www.worldofdatacraft.com" target="_blank">
-        <img src="https://github.com/DidierFlamm/DidierFlamm/blob/main/WoD_nobg.png?raw=true" width="100%"; />
+        <img src="https://github.com/DidierFlamm/DidierFlamm/raw/main/WoD_nobg.png" width="100%"; />
     </a>
     """,
     unsafe_allow_html=True,
