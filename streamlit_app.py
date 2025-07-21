@@ -6,12 +6,15 @@ import pandas as pd
 st.set_page_config(
     menu_items={
         "Get Help": None,
-        "Report a bug": "mailto:contact@diveintodata.fr?subject=Reporting%20a%20bug%20in%20titanic-survival-predictor%20Streamlit%20app&body=OS%20(Windows,%20macOS,%20Linux,%20Android,%20iOS):%0ABrowser:%0ABug%20you%20encountered:%0A%0AThanks!",
+        "Report a bug": "mailto:contact@diveintodata.ai?subject=Reporting%20a%20bug%20app&body=Project%0AOS%20(Windows,%20macOS,%20Linux,%20Android,%20iOS):%0ABrowser:%0ABug%20you%20encountered:%0A%0AThanks!",
         "About": """## Blood Cells Classification 
-This project predicts the survival chances of Titanic passengers using machine learning. The source code is available on [GitHub](https://github.com/DidierFlamm/titanic-survival-predictor)  
+Project using computer vision and deep learning to automatically identify different cell types (healthy or pathological) from microscopic images.  
 
-© 2025 Didier Flamm  
-✉️ [contact@diveintodata.fr](mailto:contact@diveintodata.fr) – 💬 [LinkedIn](https://www.linkedin.com/in/didier-flamm) – 📁 [Portfolio](https://share.streamlit.io/user/didierflamm)  
+© 2025 Didier FLAMM & Pavithra BHASKAR  
+
+📦 Source code: [GitHub](https://github.com/DidierFlamm/titanic-survival-predictor)  
+📂 Portfolio: [Streamlit Cloud](https://share.streamlit.io/user/didierflamm)  
+✉️ [contact@diveintodata.ai](mailto:contact@diveintodata.ai)  
 """,
     }
 )
