@@ -75,14 +75,14 @@ ambiance = st.sidebar.radio(
 
 if ambiance.startswith("🎛️"):
 
-    video_url = "https://www.youtube.com/watch?v=8QNSAjfqsn8"
+    video_url = "https://www.youtube.com/watch?v=M9geuh8bpy4"
     st.sidebar.video(video_url, autoplay=True, muted=False)
 
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
     Charlotte Cardin - Confetti<br>
-    Juno Awards 2024
+    Live in Toronto - June 8, 2023
     </div>
     """,
         unsafe_allow_html=True,
@@ -96,7 +96,7 @@ elif ambiance.startswith("🔞"):
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
-    Charlotte Cardin - Confetti (VF)<br>
+    © 2023 Charlotte Cardin - Confetti (VF)<br>
     [Official Lyric Video]
     </div>
     """,
