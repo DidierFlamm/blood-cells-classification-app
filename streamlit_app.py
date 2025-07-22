@@ -66,7 +66,7 @@ ambiance = st.sidebar.radio(
     "Select ambiance",
     (
         "🔇 Silent mode",
-        "🎛️ French Connexion",
+        "🍁 Canada Pale Ale",
         "🇨🇦 French Version 📛",
         "🕌 India Pop Ale",
         "💿 Welcome to Gattaca",
@@ -76,7 +76,7 @@ ambiance = st.sidebar.radio(
 )
 
 
-if ambiance.startswith("🎛️"):
+if ambiance.startswith("🍁"):
 
     video_url = "https://www.youtube.com/watch?v=ekwf5IAFLhQ"
     st.sidebar.video(video_url, autoplay=True, muted=False)
