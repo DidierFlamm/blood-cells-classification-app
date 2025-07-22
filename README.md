@@ -13,22 +13,25 @@ Une application Streamlit a été développée pour présenter les résultats et
 ## Contexte et réalisation
 
 Ce projet est basé sur le projet de fin d'études réalisé en groupe de 4 apprenants de la formation Data Scientist, dispensée par Mines Paris PSL – DataScientest.com (promotion DS Bootcamp Avril 2023).  
-Je l'ai entièrement retravaillé en Juillet 2025 pour le rendre _'grand public'_.
 
-## Équipe
+## Version 2 (2025)
+
+- Didier FLAMM  
+- Pavithra BHASKAR
+
+---
+
+## Version 1 (2023)
 
 - Jonathan CAMBON  
 - Didier FLAMM  
 - Mamadou HASSIMIOU BAH  
 - Ilyass SAIDI  
 
-## Encadrant
+### Encadrant
 
 - Khalil OUERTANI
 
----
 
-## Contact
 
-Auteur : Didier Flamm  
-Date   : Juillet 2025
+
