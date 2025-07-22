@@ -9,7 +9,7 @@ st.markdown(
 
 
 st.subheader(
-    ":red[Removing duplicates]",
+    ":red[Resizing and removing duplicates]",
     divider=True,
 )
 
@@ -17,10 +17,29 @@ text = "18 duplicate pairs were identified, 17 from dataset 1 and 1 from dataset
 trans_write(text, st.session_state.lang.split("-")[0])
 
 
-with st.expander("🕵️ Display duplicates"):
+with st.expander("🕵️ Show the duplicates"):
     st.image(
         "https://github.com/DidierFlamm/blood-cells-classification-app/raw/main/data/blood_cells/duplicates.png"
     )
+
+st.subheader(":red[Fun fact]", divider=True)
+text = """At this point, we have a clean dataset, free of duplicates and with images of identical sizes — conditions necessary for effective models training. The images have been evaluated by pathologists, and it is impossible for us to identify any potential labeling errors that may have occurred. However, there is one exception: we can state with certainty that at least one image has been mislabeled in the dataset. Indeed, among the duplicates detected earlier, two strictly identical images (pixel by pixel) have been classified into two different categories: Neutrophil and Eosinophil. 🎭 Fun challenge: try to spot the two images in question in the duplicates grid above."""
+trans_write(text, st.session_state.lang.split("-")[0])
+
+with st.expander("🔑 Reveal the 2 suspicious duplicates"):
+    col1, col2 = st.columns(2)
+    col1.write("Neutrophil - BNE_191112")
+    col1.image(
+        "https://github.com/DidierFlamm/blood-cells-classification-app/raw/main/data/suspicious/BNE_191112.jpg"
+    )
+    col2.write("Eosinophil - EO_225902")
+    col2.image(
+        "https://github.com/DidierFlamm/blood-cells-classification-app/raw/main/data/suspicious/EO_225902.jpg"
+    )
+
+text = "🔍 We invite you to save these two images on your computer or smartphone. We’ll then use a trained and fine-tuned model to predict the most likely cell type for this duplicate image."
+
+trans_write(text, st.session_state.lang.split("-")[0])
 
 st.subheader(
     ":red[Segmentation]",
@@ -36,11 +55,11 @@ trans_write(text, st.session_state.lang.split("-")[0])
 text = """Thresholding is a simple image processing technique used to separate objects from the background.  
   
 How it works (in simple terms):  
-• Each pixel in the image has an intensity value (e.g., from 0 to 255 for grayscale images).  
-• You choose a threshold value (e.g., 128).  
-• If the pixel value is higher than the threshold, it is set to white (255).  
+• Each pixel in the image has an intensity value between 0 and 1 for each RGB channel..  
+• You choose a threshold value (e.g., 0.5).  
+• If the pixel value is higher than the threshold, it is set to white (1).  
 • If the pixel value is lower, it is set to black (0).  
-This converts the image into a binary image (black and white), making objects easier to detect.  
+This transforms the image into a binary (black and white) format, reducing file size and making object detection easier, thus shortening the model training time. 
 """
 trans_write(text, st.session_state.lang.split("-")[0])
 
