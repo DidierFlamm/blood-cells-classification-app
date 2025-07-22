@@ -1,4 +1,5 @@
 import time
+import html
 import json
 import numpy as np
 import matplotlib.pyplot as plt
@@ -42,13 +43,15 @@ else:
 # translation function using Google Cloud Translation API
 @st.cache_data
 def translate_text(text: str, language: str):
-    if "google_credentials" in st.secrets and not language.startswith(
-        "en"
-    ):  # do not translate if language is 'en'
-        return translate_client.translate(text, target_language=language)[
+    if "google_credentials" in st.secrets and not language.startswith("en"):
+        translated_text = translate_client.translate(text, target_language=language)[
             "translatedText"
         ]
-    else:
+        return html.unescape(
+            translated_text
+        )  # because html code make text-to-speech say something weird...
+
+    else:  # do not translate if language is 'en'
         return text
 
 
