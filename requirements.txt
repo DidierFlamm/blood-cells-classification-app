@@ -1,4 +1,5 @@
 google-cloud-translate
+matplotlib
 numpy
 pandas
 plotly
