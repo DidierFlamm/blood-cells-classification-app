@@ -83,7 +83,7 @@ trans_write(text, st.session_state.lang.split("-")[0])
 
 st.image(
     "https://github.com/DidierFlamm/blood-cells-classification-app/raw/main/data/deep_learning/DenseNet121.webp",
-    caption="Diagram of the DenseNet121 network with its 121 layers",
+    caption="Diagram of the DenseNet121 network",
 )
 
 st.image(
