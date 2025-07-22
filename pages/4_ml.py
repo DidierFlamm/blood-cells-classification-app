@@ -2,21 +2,16 @@ import streamlit as st
 
 
 st.markdown(
-    "<h2 style='text-align: center; color: #DC143C;'>📈 Optimisation</h2>",
+    "<h2 style='text-align: center; color: #DC143C;'>🤖 Machine Learning</h2>",
     unsafe_allow_html=True,
 )
 
+st.write("3 models: XGBoost, Random Forest and SVM")
 
-st.subheader("🔧 :red[Fine tuning]", divider=True)
+st.subheader("📈 :red[Results]", divider=True)
 
-
-st.subheader(
-    (
-        "🏆 :red[Classement]"
-        if st.session_state.lang.startswith("fr")
-        else "🏆 :red[Ranking]"
-    ),
-    divider=True,
+st.write(
+    "La binarization n'a pas améliorer les performances pcq les cellules étaient déjà colorisées donc facilement identifiables par les modèles..."
 )
 
 _, _, col = st.columns(3)
