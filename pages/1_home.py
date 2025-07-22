@@ -87,13 +87,13 @@ Project instructions:
 https://github.com/DidierFlamm/blood-cells-classification-app/raw/main/Projet_2023-04.pdf
 
 The models were trained and evaluated on three publicly available datasets:  
-Dataset 1: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7182702/  
-Dataset 2: https://www.kaggle.com/eugeneshenderov/acute-promyelocytic-leukemia-apl  
-Dataset 3: https://www.kaggle.com/code/nikhilsharma00/leukemia-classification
+* Dataset 1: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7182702/  
+* Dataset 2: https://www.kaggle.com/eugeneshenderov/acute-promyelocytic-leukemia-apl  
+* Dataset 3: https://www.kaggle.com/code/nikhilsharma00/leukemia-classification
            
 We also relied on prior work and scientific literature:  
-https://www.sciencedirect.com/science/article/abs/pii/S0169260719303578?via%3Dihub  
-https://www.sciencedirect.com/science/article/abs/pii/S0169260721000742?via%3Dihub
+* https://www.sciencedirect.com/science/article/abs/pii/S0169260719303578?via%3Dihub  
+* https://www.sciencedirect.com/science/article/abs/pii/S0169260721000742?via%3Dihub
 
 Final report 2023:  
 https://github.com/DidierFlamm/blood-cells-classification-app/raw/main/Rapport_final_Blood_Cells_2023-07.pdf
