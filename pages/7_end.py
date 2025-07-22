@@ -1,5 +1,5 @@
 import streamlit as st
-from utils import stream_data
+from utils import translate_text, stream_data
 
 st.markdown(
     "<h2 style='text-align: center; color: #DC143C;'>🏁 The end</h2>",
@@ -12,16 +12,20 @@ st.subheader("🚨  SPOILER ALERT 🫣")
 # URL de la vidéo
 video_url = "https://youtu.be/M26WayJWXCM?si=Ur2NimIhUimfaHSz"
 
-st.video(video_url, autoplay=True, muted=True)
+st.video(video_url, autoplay=False, muted=False)
+st.markdown(
+    "<p style='text-align: center; font-size: 0.8rem; color: gray;'>Right Handed Men Don't Hold It With Their Left | Gattaca Ending Scene</p>",
+    unsafe_allow_html=True,
+)
+
 
 st.subheader("🎉")
 
-st.write_stream(
-    stream_data(
-        """Au nom de tous les membres de l’équipage, nous souhaitons vous adresser nos plus sincères félicitations et remerciements pour avoir bravé avec succès cet océan de données. Nous espérons que ce projet vous a apporté autant de plaisir que d’apprentissage, et nous avons hâte de vous retrouver très bientôt pour de nouvelles expériences passionnantes avec DID — Dive Into Data. 
-"""
-    )
-)
+OUTRO = """On behalf of all the crew members, we would like to extend our sincerest congratulations and thanks for successfully navigating this ocean of data. We hope this project brought you as much enjoyment as learning, and we look forward to seeing you very soon for more exciting experiences with DID — Dive Into Data."""
+
+OUTRO = translate_text(OUTRO, st.session_state.lang.split("-")[0])
+
+st.write_stream(stream_data(OUTRO))
 
 
 st.write_stream(stream_data("A bientôt !"))
