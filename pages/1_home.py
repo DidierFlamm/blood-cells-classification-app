@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import streamlit as st
-from utils import trans_write
+from utils import translate_text
 import streamlit.components.v1 as components
 
 st.markdown(
@@ -32,7 +32,7 @@ The first version of this project, conducted between April and July 2023, by a t
 
 The goal is to automatically identify and classify different types of blood cells from microscopic images using state-of-the-art machine learning and deep learning algorithms. The relative density and distribution of blood cells in a smear are essential diagnostic indicators for various pathologies. For example, leukemia diagnosis often relies on the lymphocyte-to-other-cell ratio. Accurate detection of abnormal leukocytes is as well a critical step in supporting early diagnosis and treatment planning. Our approach aims to build a pipeline capable of preprocessing, segmenting, and classifying cells, paving the way for both clinical decision support systems and research applications.
 
-The project began with an exploratory analysis of the datasets, including data cleaning, normalization, and augmentation to address class imbalance and improve generalization. We implemented a complete machine learning workflow, starting with traditional models (XGBoost, Random Forest, SVM) for baseline performance, followed by convolutional neural networks (CNN) for advanced feature extraction and classification.
+The project began with an exploratory analysis of the datasets, including data cleaning, normalization, and augmentation to address class imbalance and improve generalization. We implemented a complete machine learning workflow, starting with traditional models (Random Forest, SVM, XGBoost) to establish baseline performance, followed by transfer learning using pretrained convolutional neural networks (VGG16, ResNet50, and DenseNet121) for advanced feature extraction and classification.
 
 Given the time constraints and computational resources, we focused this first stage on classifying healthy blood cells. This step provides a robust foundation for future work aimed at detecting abnormal cells and computing relevant clinical ratios (e.g., lymphocyte percentage) in real patient samples.
 
@@ -41,6 +41,7 @@ Two years later, in July 2025, a second version of the project was launched by a
 Captains Flamm Didier and Bhaskar Pavithra, together with their fearless young crew members James and Charlize, welcome you aboard the Blood Cells Project. Get ready to set sail on an exciting and insightful journey across the boundless ocean of data, where every wave of information brings us closer to uncovering the secrets hidden within blood cells.
 """
 
+INTRO = translate_text(INTRO, st.session_state.lang.split("-")[0])
 
 script = f"""
 <script>
@@ -77,7 +78,7 @@ with col2:
         height=45,
     )
 
-trans_write(INTRO, st.session_state.lang.split("-")[0])
+st.write(INTRO)
 
 st.subheader(":red[Data]", divider=True)
 
