@@ -28,7 +28,7 @@ results.set_index("Model", inplace=True)
 
 st.dataframe(results)
 
-text = "🧐 We find that binarization did not deliver the expected results: while training was much faster, the performance loss does not justify its use. The best-performing Machine Learning model is XGBoost after training on the raw images."
+text = "🧐 We find that binarization did not deliver the expected results: while training was much faster, the performance loss does not justify its use. The best-performing Machine Learning model is XGBoost trained on the raw images with **91%** accuracy."
 trans_write(text, st.session_state.lang.split("-")[0])
 
 _, _, col = st.columns(3)
