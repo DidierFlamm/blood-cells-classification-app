@@ -83,7 +83,7 @@ st.subheader(":red[Data]", divider=True)
 
 st.write(
     """
-Initial project instructions:  
+Project instructions:  
 https://github.com/DidierFlamm/blood-cells-classification-app/raw/main/Projet_2023-04.pdf
 
 The models were trained and evaluated on three publicly available datasets:  
