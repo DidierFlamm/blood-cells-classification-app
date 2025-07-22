@@ -20,15 +20,15 @@ for text in [text_0, text_1, text_2, text_3]:
 results = pd.DataFrame(
     {
         "Model": ["Random Forest", "SVM", "XGBoost"],
-        "Accuracy without Binarization": ["85%", "83%", "91%"],
-        "Accuracy after Binarization": ["73%", "57%", "74%"],
+        "Accuracy with raw images": ["85%", "83%", "91%"],
+        "Accuracy after segmentation": ["73%", "57%", "74%"],
     }
 )
 results.set_index("Model", inplace=True)
 
 st.dataframe(results)
 
-text = "🧐 We find that binarization did not deliver the expected results: while training was much faster, the performance loss does not justify its use. The best-performing Machine Learning model is XGBoost trained on the raw images with **91%** accuracy."
+text = "🧐 We find that segmentation by thresholding did not deliver the expected results: while training was much faster, the performance loss does not justify its use. The best-performing Machine Learning model is XGBoost trained on the raw images with **91%** accuracy."
 trans_write(text, st.session_state.lang.split("-")[0])
 
 _, _, col = st.columns(3)
