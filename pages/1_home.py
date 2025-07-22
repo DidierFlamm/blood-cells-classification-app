@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import streamlit as st
-from utils import translate_text
+from utils import trans_write
 import streamlit.components.v1 as components
 
 st.markdown(
@@ -41,7 +41,6 @@ Two years later, in July 2025, a second version of the project was launched by a
 Captains Flamm Didier and Bhaskar Pavithra, together with their fearless young crew members James and Charlize, welcome you aboard the Blood Cells Project. Get ready to set sail on an exciting and insightful journey across the boundless ocean of data, where every wave of information brings us closer to uncovering the secrets hidden within blood cells.
 """
 
-INTRO = translate_text(INTRO, st.session_state.lang.split("-")[0])
 
 script = f"""
 <script>
@@ -78,7 +77,7 @@ with col2:
         height=45,
     )
 
-st.write(INTRO)
+trans_write(INTRO, st.session_state.lang.split("-")[0])
 
 st.subheader(":red[Data]", divider=True)
 

@@ -39,9 +39,18 @@ else:
 # translation function using Google Cloud Translation API
 @st.cache_data
 def translate_text(text: str, language: str):
-    if "google_credentials" in st.secrets and not language.startswith("en"):
+    if "google_credentials" in st.secrets and not language.startswith(
+        "en"
+    ):  # do not translate if language is 'en'
         return translate_client.translate(text, target_language=language)[
             "translatedText"
         ]
     else:
         return text
+
+
+# translate and write text
+@st.cache_data
+def trans_write(text, language):
+    text = translate_text(text, language)
+    st.write(text)

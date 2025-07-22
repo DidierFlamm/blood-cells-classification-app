@@ -1,5 +1,5 @@
 import streamlit as st
-from utils import translate_text
+from utils import trans_write
 
 st.markdown(
     "<h2 style='text-align: center; color: #DC143C;'>📊 Visualisation</h2>",
@@ -12,23 +12,22 @@ st.subheader(":red[Dataset 1]", divider=True)
 text = """The dataset 1 contains 17,092 images representing eight categories of healthy peripheral blood cells, collected using the CellaVision DM96 analyzer.  
 These images were evaluated by pathologists with the aim of training classification models capable of distinguishing between 8 different cell types: neutrophils, eosinophils, basophils, lymphocytes, monocytes, immature granulocytes (myelocytes, metamyelocytes, and promyelocytes), erythroblasts, and platelets.  
 The image size is 360 x 363 pixels."""
-text = translate_text(text, st.session_state.lang.split("-")[0])
-st.write(text)
+trans_write(text, st.session_state.lang.split("-")[0])
+
 
 st.subheader(":red[Dataset 2]", divider=True)
 
 text = """Dataset 2 consists of 25,917 images divided into 22 classes, including 10,100 unlabeled images.  
 All patients are affected by a myeloid cell cancer, Acute Myeloid Leukemia (AML), or a variant: Acute Promyelocytic Leukemia (APL), and we cannot distinguish pathological cells from normal cells. Moreover, the categories do not match those of Dataset 1.  
 For these two reasons, we decided not to use this dataset."""
-text = translate_text(text, st.session_state.lang.split("-")[0])
-st.write(text)
+trans_write(text, st.session_state.lang.split("-")[0])
+
 
 st.subheader(":red[Dataset 3]", divider=True)
 text = """Dataset 3 contains 368 images divided into 2 folders:  
 • IDB1: 108 images with multiple lymphoblasts identified in each image — not usable because the cells are not isolated.  
 • IDB2: 260 images of isolated and labeled lymphoblasts. Among these, 130 cells are labeled as healthy and come from patients in good health. These 130 images are kept for the continuation of the project."""
-text = translate_text(text, st.session_state.lang.split("-")[0])
-st.write(text)
+trans_write(text, st.session_state.lang.split("-")[0])
 
 st.subheader(":red[Complete dataset]", divider=True)
 text = """Among the 3 proposed datasets, we have selected:  
@@ -37,8 +36,8 @@ Dataset 2: no images
 Dataset 3: 130 images (isolated and healthy lymphoblasts)  
   
 for a total of 17,222 labeled images according to the blood cell type."""
-text = translate_text(text, st.session_state.lang.split("-")[0])
-st.write(text)
+trans_write(text, st.session_state.lang.split("-")[0])
+
 
 st.code(
     "ℹ️ 17222 images found in 58ms, belonging to 9 classes: ['basophil', 'eosinophil', 'erythroblast', 'ig', 'lymphoblast', 'lymphocyte', 'monocyte', 'neutrophil', 'platelet']"
