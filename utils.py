@@ -334,7 +334,7 @@ class ImagesBinarizer:
         if X.ndim == 4:
             plt.figure(figsize=(8, 4))
 
-            for i in tqdm(range(3), desc="Computing RGB colorimetry"):
+            for i in range(3):
                 channel_i_pixels = X[:, :, :, i].ravel()
                 hist, bins = np.histogram(channel_i_pixels, bins=256, range=(0, 1))
                 hist_smooth = gaussian_filter1d(hist, sigma=2)
