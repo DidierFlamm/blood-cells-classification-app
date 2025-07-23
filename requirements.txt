@@ -1,8 +1,5 @@
 google-cloud-translate
-matplotlib
 numpy
 pandas
-plotly
-scikit_learn
+Pillow
 streamlit
-streamlit-javascript
