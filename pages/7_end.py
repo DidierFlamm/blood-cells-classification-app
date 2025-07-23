@@ -14,7 +14,10 @@ video_url = "https://youtu.be/M26WayJWXCM?si=Ur2NimIhUimfaHSz"
 
 st.video(video_url, autoplay=False, muted=False)
 st.markdown(
-    "<p style='text-align: center; font-size: 0.8rem; color: gray;'>Right Handed Men Don't Hold It With Their Left | Gattaca Ending Scene</p>",
+    """<p style='text-align: center; font-size: 0.8rem; color: gray;'>
+    Right Handed Men Don't Hold It With Their Left | Gattaca Ending Scene<br>
+    <em>🌐 Auto-generated subtitles can be activated by clicking ⚙️ at the bottom right of the video.</em>
+    </p>""",
     unsafe_allow_html=True,
 )
 
