@@ -57,7 +57,7 @@ if uploaded_file is not None:
         # Add dimension for batch
         img_array = img_array.reshape(1, -1)
         prediction = model.predict(img_array)
-        st.info(prediction[0], icon="👁️")
+        st.info(f"Prediction: {prediction[0]}", icon="👁️")
     except Exception:
         st.error(f"{uploaded_file.name} is not a supported image", icon="❌")
 
