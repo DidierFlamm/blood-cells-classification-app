@@ -27,10 +27,15 @@ text = """At this point, we have a clean dataset, free of duplicates and with im
 trans_write(text, st.session_state.lang.split("-")[0])
 
 with st.expander("🔑 Reveal the 2 suspicious duplicates"):
-    st.image(
-        "https://github.com/DidierFlamm/blood-cells-classification-app/raw/main/data/blood_cells/suspicious_duplicates.png"
+    col1, col2 = st.columns(2)
+    col1.write("Neutrophil - BNE_191112")
+    col1.image(
+        "https://github.com/DidierFlamm/blood-cells-classification-app/raw/main/data/blood_cells/suspicious/BNE_191112.jpg"
     )
-
+    col2.write("Eosinophil - EO_225902")
+    col2.image(
+        "https://github.com/DidierFlamm/blood-cells-classification-app/raw/main/data/blood_cells/suspicious/EO_225902.jpg"
+    )
 
 text = "🔍 We invite you to save these two images on your computer or smartphone. We’ll then use a trained and fine-tuned model to predict the most likely cell type for this duplicate image."
 
