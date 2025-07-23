@@ -37,7 +37,8 @@ with st.expander("🔑 Reveal the 2 suspicious duplicates"):
         "https://github.com/DidierFlamm/blood-cells-classification-app/raw/main/data/blood_cells/suspicious/EO_225902.jpg"
     )
 
-text = "🔍 We invite you to save these two images on your computer or smartphone. We’ll then use a trained and fine-tuned model to predict the most likely cell type for this duplicate image."
+text = """🔍 By the end of the project, we will use a trained and fine-tuned model to predict the most probable cell type for this duplicate image.
+    "Save one of the two identical images above, and you’ll soon have access to the model’s prediction—providing more insight to determine whether the duplicate corresponds to a Neutrophil or an Eosinophil."""
 
 trans_write(text, st.session_state.lang.split("-")[0])
 
