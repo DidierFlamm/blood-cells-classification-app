@@ -8,6 +8,8 @@ Développer un outil capable de classifier les cellules à partir de frottis san
 
 Une application Streamlit a été développée pour présenter les résultats et permettre une exploration interactive des données.
 
+🔗 Live demo : https://did-blood-cells.streamlit.app
+
 ---
 
 ## Contexte et réalisation
