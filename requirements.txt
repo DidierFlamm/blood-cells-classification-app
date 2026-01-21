@@ -6,3 +6,4 @@ Pillow
 scikit-learn
 streamlit
 altair<5
+imghdr
