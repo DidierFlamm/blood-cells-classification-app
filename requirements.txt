@@ -4,4 +4,4 @@ numpy
 pandas
 Pillow
 scikit-learn
-streamlit>=1.36
+streamlit
