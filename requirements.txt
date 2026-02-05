@@ -4,6 +4,4 @@ numpy
 pandas
 Pillow
 scikit-learn
-streamlit
-altair<5
-imghdr
+streamlit>=1.36
