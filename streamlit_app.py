@@ -66,11 +66,11 @@ ambiance = st.sidebar.radio(
     "Select ambiance",
     (
         "🔇 Silent mode",
-        "🍁 Canada Pale Ale",
-        "🇨🇦 French Version 📛",
-        "🕌 India Pop Ale",
+        # "🍁 Canada Pale Ale",
+        # "🇨🇦 French Version 📛",
+        # "🕌 India Pop Ale",
         "💿 Welcome to Gattaca",
-        "💲 Your ad here for...",
+        # "💲 Your ad here for...",
     ),
     label_visibility="collapsed",
 )
